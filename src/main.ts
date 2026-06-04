@@ -1,14 +1,19 @@
-import {Persona} from './clases/Persona';
-const persona = new Persona();
-persona.nombre = 'Juan';
-persona.fechaNacimiento = new Date('2000-01-01');
-persona.estatura =180;
+import { Producto } from "./clases/Producto";
 
-persona.calcularMayorEdad();
+const producto1 = new Producto();
+producto1.nombre = "Laptop";
+producto1.precio = 1000;
+producto1.descuento = 10;
+producto1.disponible = true;
 
-const persona2 = new Persona();
-persona2.nombre = 'Juan';
-persona2.fechaNacimiento = new Date('2020-01-01');
-persona2.estatura =180;
+console.log("Precio final:", producto1.calcularPrecioFinal());
+
+const producto2 = new Producto();
+producto2.nombre = "Celular";
+producto2.precio = 800;
+producto2.descuento = 5;
+producto2.disponible = false;
+
+console.log("Precio final:", producto2.calcularPrecioFinal());
 
 persona2.calcularMayorEdad();
