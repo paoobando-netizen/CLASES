@@ -1,41 +1,47 @@
-var nombre = 'Juan';
-var fechaNacimiento = new Date('2020-01-01');
-var estatura = 180;
-var estado = true;
-var edad = new Date().getFullYear() - fechaNacimiento.getFullYear();
+var nombre = "Laptop";
+var precio = 1000;
+var descuento = 10;
+var disponible = true;
 
+var precioFinal = precio - (precio * (descuento / 100));
 
-if(edad >= 18) {
-    console.log(`${nombre} es mayor de edad`);
+if (disponible) {
+    console.log(nombre + " está disponible");
+    console.log("Precio final: " + precioFinal);
 } else {
-    console.log(`${nombre} es menor de edad`);
-}   
+    console.log(nombre + " no está disponible");
+}
+
+console.log("----------------------------------");
 
 
-var nombre2 = 'Maria';
-var fechaNacimiento2= new Date('2020-01-01');
-var estatura2 = 180;
-var estado2 = true;
-var edad2 = new Date().getFullYear() - fechaNacimiento.getFullYear();
+var nombre2 = "Celular";
+var precio2 = 800;
+var descuento2 = 5;
+var disponible2 = false;
 
+var precioFinal2 = precio2 - (precio2 * (descuento2 / 100));
 
-if(edad2 >= 18) {
-    console.log(`${nombre} es mayor de edad`);
+if (disponible2) {
+    console.log(nombre2 + " está disponible");
+    console.log("Precio final: " + precioFinal2);
 } else {
-    console.log(`${nombre} es menor de edad`);
-} 
+    console.log(nombre2 + " no está disponible");
+}
+
+console.log("----------------------------------");
 
 
+var nombre3 = "Televisor";
+var precio3 = 1500;
+var descuento3 = 20;
+var disponible3 = true;
 
-var nombre3 = 'Pedro';
-var fechaNacimiento3 = new Date('2020-01-01');
-var estatura3 = 180;
-var estado3 = true;
-var edad3 = new Date().getFullYear() - fechaNacimiento.getFullYear();
+var precioFinal3 = precio3 - (precio3 * (descuento3 / 100));
 
-
-if(edad3 >= 18) {
-    console.log(`${nombre} es mayor de edad`);
+if (disponible3) {
+    console.log(nombre3 + " está disponible");
+    console.log("Precio final: " + precioFinal3);
 } else {
-    console.log(`${nombre} es menor de edad`);
-} 
+    console.log(nombre3 + " no está disponible");
+}
