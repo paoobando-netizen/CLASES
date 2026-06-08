@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const circulo_1 = require("./circulo");
+const rectangulo_1 = require("./rectangulo");
+const triangulo_1 = require("./triangulo");
+const circulo = new circulo_1.Circulo();
+circulo.radio = 5;
+console.log("=== CIRCULO ===");
+console.log("Área:", circulo.calcularArea());
+console.log("Perímetro:", circulo.calcularPerimetro());
+const rectangulo = new rectangulo_1.Rectangulo();
+rectangulo.base = 10;
+rectangulo.altura = 4;
+console.log("=== RECTÁNGULO ===");
+console.log("Área:", rectangulo.calcularArea());
+console.log("Perímetro:", rectangulo.calcularPerimetro());
+const triangulo = new triangulo_1.Triangulo();
+triangulo.base = 6;
+triangulo.altura = 4;
+triangulo.lado1 = 5;
+triangulo.lado2 = 4;
+triangulo.lado3 = 3;
+console.log("=== TRIÁNGULO ===");
+console.log("Área:", triangulo.calcularArea());
+console.log("Perímetro:", triangulo.calcularPerimetro());
+//# sourceMappingURL=main.js.map

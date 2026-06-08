@@ -16,4 +16,4 @@ producto2.disponible = false;
 
 console.log("Precio final:", producto2.calcularPrecioFinal());
 
-persona2.calcularMayorEdad();
+
